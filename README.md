@@ -7,6 +7,10 @@ A simple and clean YouTrack issue viewer based on [`nepda/youtrack-client`](http
 here. Use at your own risk.
 
 ```
+    git clone https://github.com/nepda/youtrack-issue-viewer.git
+    cd youtrack-issue-viewer
+    cp .config.php.dist .config.php
+    # vim .config.php #edit config file to your needs 
     php -S localhost:8080 -t public/
 ```
 
