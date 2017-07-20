@@ -1,0 +1,18 @@
+{% extends "partials/layout.twg" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    {{ description|raw }}
+
+    <p class="edit-issue">
+        <a target="_blank" title="Edit issue {{ issueId }}"
+           href="{{ youtrackBaseUrl }}/issue/{{ issueId }}">
+            edit
+        </a>
+    </p>
+{% endblock %}

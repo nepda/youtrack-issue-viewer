@@ -1,0 +1,17 @@
+{
+  "name": "nepda/youtrack-wysiwyg",
+  "description": "YouTrack WYSIWYG issue editor/viewer",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nepomuk Fraedrich",
+      "email": "info@nepda.eu"
+    }
+  ],
+  "require": {
+    "nepda/youtrack-client": "~1.7",
+    "slim/slim": "^3.0",
+    "slim/twig-view": "dev-master"
+  }
+}

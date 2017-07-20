@@ -1,0 +1,18 @@
+<?php
+
+define('YOUTRACK_URL', '*');
+
+if (!isset($root)) {
+    $root = false;
+}
+$root = (bool)$root;
+
+if ($root) {
+    define('YOUTRACK_TOKEN', '*');
+    define('YOUTRACK_USERNAME', YOUTRACK_TOKEN);
+    define('YOUTRACK_PASSWORD', null);
+} else {
+    define('YOUTRACK_TOKEN', '*');
+    define('YOUTRACK_USERNAME', YOUTRACK_TOKEN);
+    define('YOUTRACK_PASSWORD', null);
+}

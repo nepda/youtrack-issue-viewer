@@ -1,0 +1,14 @@
+{% extends "partials/layout.twg" %}
+
+{% block title %}
+    YouTrack Viewer
+{% endblock %}
+
+
+{% block content %}
+    <h1>Welcome the the YouTrack Viewer</h1>
+
+    <p>
+        Use a URL path like: <pre>/SBX-1234</pre>
+    </p>
+{% endblock %}

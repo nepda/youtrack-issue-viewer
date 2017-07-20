@@ -1,0 +1,15 @@
+
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.issue-resolved {
+    text-decoration: line-through;
+    color: #74a195;
+}
+
+p.edit-issue {
+    position: fixed;
+    bottom: 0;
+}
