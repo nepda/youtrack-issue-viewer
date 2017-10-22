@@ -13,3 +13,38 @@ p.edit-issue {
     position: fixed;
     bottom: 0;
 }
+
+a.toc-header, a.toc-header:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.wiki-tbl {
+    width: auto !important;
+    table-layout: auto !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    border: 1px solid #898989;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.wiki-tbl-th {
+    padding: 2px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #898989;
+    background-color: #d4d5d6;
+}
+
+.wiki-tbl-td {
+    padding: 2px;
+    border: 1px solid #898989;
+}
+
+@media print {
+    .print-hidden {
+        visibility: hidden !important;
+        display: none !important;
+    }
+}

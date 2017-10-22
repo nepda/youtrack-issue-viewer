@@ -51,7 +51,17 @@ $app->get('/{issueId}', function (
 
     $txt = preg_replace('/"\/youtrack\/issue\/(.*)"/Usi', '"/$1"', $txt);
 
-    $txt = str_replace(' href="/youtrack/', ' href="' . YOUTRACK_URL . '/', $txt);
+    $txt = str_replace(
+        [
+            ' href="/youtrack/',
+            '<img src="/youtrack'
+        ],
+        [
+            ' href="' . YOUTRACK_URL . '/',
+            '<img src="' . YOUTRACK_URL
+        ],
+        $txt
+    );
 
     return $this->view->render($response, 'article.twg', [
         'issueId' => $i->getId(),

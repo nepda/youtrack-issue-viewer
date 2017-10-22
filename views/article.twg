@@ -7,9 +7,11 @@
 
 {% block content %}
     <h1>{{ title }}</h1>
-    {{ description|raw }}
+    <div id="contents">
+        {{ description|raw }}
+    </div>
 
-    <p class="edit-issue">
+    <p class="edit-issue print-hidden">
         <a target="_blank" title="Edit issue {{ issueId }}"
            href="{{ youtrackBaseUrl }}/issue/{{ issueId }}">
             edit
